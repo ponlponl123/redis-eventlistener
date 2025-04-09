@@ -1,6 +1,8 @@
 # pona-redis-eventlistener
 A Light weight Events listener for pona redis
 
+For my project, i made this to listen a key has expired then update that data to database.
+
 ## Installation
 
 Just download this source code, then let's edit/make anything do u want.
