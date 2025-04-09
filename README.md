@@ -33,6 +33,23 @@ Everything is in .env files.
 - `DB_PASSWORD` for password of database
 - `DB_NAME` for database name
 
+## Make your own listener
+
+first, create typescript file in `src/events` directory, and in that file required these export:
+
+- `listenerName` name of events to listen
+- `handler` your function with these optional args: `key?: RedisKey`, `value?: RedisValue`
+- and last one is **export default** for all of that things.
+
+and for now you need to provide manually your handler/listener in `src/events/static.ts`, then put your listener to `events` constant with these required:
+
+- `name` from `[your_listener].listenerName`
+- `handler` from `[your_listener].handler`
+
+### But don't worries!, all example are in those files.
+
+e.g. `src/events/example.ts`, `src/events/promise-example.ts`
+
 ## Usage
 
 It's very simple

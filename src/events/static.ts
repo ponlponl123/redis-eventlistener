@@ -1,4 +1,6 @@
 import { type RedisValue, type RedisKey } from 'ioredis';
+
+// Import your listeners here
 import example from './promise-example';
 import promiseExample from './promise-example';
 
@@ -11,6 +13,7 @@ export interface Listener {
     );
 }
 
+// put your listeners here
 export const events: Listener[] = [
     {
         name: example.listenerName,
