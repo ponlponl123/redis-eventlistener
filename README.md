@@ -1,5 +1,5 @@
-# pona-redis-eventlistener
-A Light weight Events listener for pona redis
+# redis-eventlistener
+A Light weight Events listener for redis and mariadb/mysql
 
 For my project, i made this to listen a key has expired then update that data to database.
 
