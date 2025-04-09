@@ -29,7 +29,7 @@ Everything is in .env files.
 - `DB_PORT` for port of database
 - `DB_USER` for username of database
 - `DB_PASSWORD` for password of database
-- `DB_DATABASE` for database name
+- `DB_NAME` for database name
 
 ## Usage
 
