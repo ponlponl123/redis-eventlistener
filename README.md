@@ -7,7 +7,7 @@ For my project, i made this to listen a key has expired then update that data to
 
 Just download this source code, then let's edit/make anything do u want.
 
-- Install Dependencies
+- the only thing needed is **Install Dependencies**
     - npm
     ```bash:
     $ npm install
