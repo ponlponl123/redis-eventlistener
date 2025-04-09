@@ -1,7 +1,5 @@
-import { type RedisValue, type RedisKey } from 'ioredis';
-
 // Import your listeners here
-import example from './promise-example';
+import example from './example';
 import promiseExample from './promise-example';
 
 export interface Listener {
