@@ -8,8 +8,9 @@ export interface Listener {
     name: string;
     handler: (
         (() => void) |
-        ((key?: RedisKey) => void) |
-        ((key?: RedisKey, value?: RedisValue) => void)
+        ((pattern: string) => void) |
+        ((pattern: string, channel: string) => void) |
+        ((pattern: string, channel: string, message: string) => void)
     );
 }
 

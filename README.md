@@ -39,7 +39,7 @@ Everything is in .env files.
 first, create typescript file in `src/events` directory, and in that file required these exports:
 
 - `listenerName` name of event to listen
-- `handler` your function with these optional args: `key?: RedisKey`, `value?: RedisValue`
+- `handler` your function with these optional args: `pattern: string`, `channel: string`, `message: string`
 - and last one is **export default** for all of that things.
 
 and for now you need to provide manually your handler/listener in `src/events/static.ts`, put/import your listener to `events` constant with these required:

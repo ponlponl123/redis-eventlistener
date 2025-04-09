@@ -20,8 +20,13 @@ class EventsListener {
         const listeners = events;
         for (const listener of listeners) {
             if (listener.handler)
-                console.log(`Registering listener: ${listener.name}`),
-                EventsListener.redis_client.on(listener.name, listener.handler)
+            {
+                EventsListener.redis_client.psubscribe(listener.name, (err, count) => {
+                    console.log(`Subscribed to ${listener.name} events`);
+                });
+                EventsListener.redis_client.on('pmessage', listener.handler);
+                console.log(`Listener ${listener.name} registered`);
+            }
             else
                 console.error(`Listener ${listener.name} does not have a handler`);
         }
