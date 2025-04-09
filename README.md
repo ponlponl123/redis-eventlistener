@@ -35,7 +35,7 @@ Everything is in .env files.
 
 ## Make your own listener
 
-first, create typescript file in `src/events` directory, and in that file required these export:
+first, create typescript file in `src/events` directory, and in that file required these exports:
 
 - `listenerName` name of events to listen
 - `handler` your function with these optional args: `key?: RedisKey`, `value?: RedisValue`
