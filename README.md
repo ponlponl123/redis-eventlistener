@@ -25,7 +25,7 @@ Everything is in .env files.
 - `REDIS_HOST` for hostname/ip of redis
 - `REDIS_PORT` for port of redis
 - `REDIS_PASSWORD` for password of redis (optional)
-- `REDIS_DB` database index.
+- `REDIS_DB` database index. (optional)
 
 ### Database (mariadb/mysql)
 - `DB_HOST` for hostname/ip of database
