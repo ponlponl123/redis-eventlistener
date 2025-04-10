@@ -34,9 +34,8 @@ class EventsListener {
 
     private static async init() {
         try {
-            await EventsListener.redis_client.connect();
-            console.log('Redis client connected');
             EventsListener.redis_client.on('ready', this.registerListeners)
+            await EventsListener.redis_client.connect();
         }
         catch (error) {
             console.error('Error connecting to Redis:', error);
